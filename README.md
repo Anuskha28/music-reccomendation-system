@@ -43,3 +43,20 @@ Preprocess data and create song identifiers
 Build popularity-based recommender
 Build item similarity-based recommender
 Generate song recommendations for users
+# Usage
+Import Libraries: Import necessary libraries such as pandas and numpy.
+Change Directory: Set the directory to the location of the custom recommendation module.
+Load the Data: Load the user-song interaction data (triplets_file) and song metadata (song_data).
+Combine Dataframes: Merge the two dataframes based on the song_id column and remove any duplicate song_ids.
+Data Preparation: Create new features, such as combining title and artist name, and calculate song popularity.
+Popularity-Based Recommendation:
+Import the popularity recommender model.
+Create the popularity recommender object and generate recommendations based on user_id.
+Item Similarity Recommendation:
+Import the item similarity recommender model.
+Create the item similarity recommender object and generate recommendations based on user_id or song name.
+# Example
+Here's how you can use the script:
+
+python music_recommendation.py
+Follow the instructions to generate recommendations based on popularity or item similarity for specific users or songs.
